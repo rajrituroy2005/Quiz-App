@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="timer">Time Left: 10s</div>
+    <h2 id="questionText">Loading question...</h2>
+    <ul id="optionsList" role="listbox" aria-label="Quiz options"></ul>
+  </div>
+  <div id="scorecard" class="scorecard hidden">
+    <div class="scorecard-content">
+      <h2>Quiz Completed!</h2>
+      <p id="scoreText">Your Score: 0/0 (0%)</p>
+      <button id="restartQuiz" class="submit-btn">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="second.js"></script>
+</body>
+</html>

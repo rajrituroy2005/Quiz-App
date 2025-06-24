@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Quiz App</h1>
+    <div class="form">
+      <label for="question">Enter Question</label>
+      <input type="text" id="question" placeholder="Type your question here" required />
+
+      <div class="options">
+        <label for="option1">Option 1</label>
+        <input type="text" id="option1" placeholder="Enter option 1" required />
+
+        <label for="option2">Option 2</label>
+        <input type="text" id="option2" placeholder="Enter option 2" required />
+
+        <label for="option3">Option 3</label>
+        <input type="text" id="option3" placeholder="Enter option 3" required />
+
+        <label for="option4">Option 4</label>
+        <input type="text" id="option4" placeholder="Enter option 4" required />
+      </div>
+
+      <label for="correctAnswer">Correct Answer</label>
+      <select id="correctAnswer" required>
+        <option value="" disabled selected>Select correct option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </select>
+    </div>
+    <button id="addqs" class="submit-btn">Add Question</button>
+    <button id="reset" class="submit-btn">Clear Form</button>
+  </div>
+  <a href="second.html" target="_blank">
+    <button class="start-btn">Start Quiz</button>
+  </a>
+  <script src="script.js"></script>
+</body>
+</html>
